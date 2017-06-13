@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Naming Convention</title>
+    <link rel="stylesheet" href="resources/css/main.css">
+
+<!-- drag and drop scripts -->
+    <script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data).cloneNode(true));
+    }
+    </script>
+
+  </head>
+
+
+  <body>
+
+    <!-- field for letters to be dragged into -->
+<div id="namefield" ondrop="drop(event)" ondragover="allowDrop(event)">
+</div>
+
+<!-- field to drag letters from -->
+<div id="alphabetfield" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img class="dragletter" src="resources/images/letterA.png" 
+  draggable="true" ondragstart="drag(event)" id="A">
+  <img class="dragletter" src="resources/images/letterB.png"
+  draggable="true" ondragstart="drag(event)" id="B">
+  <img class="dragletter" src="resources/images/letterC.png"
+  draggable="true" ondragstart="drag(event)" id="C">
+  <img class="dragletter" src="resources/images/letterD.png"
+  draggable="true" ondragstart="drag(event)" id="D">
+  <img class="dragletter" src="resources/images/letterE.png"
+  draggable="true" ondragstart="drag(event)" id="E">
+  <img class="dragletter" src="resources/images/letterF.png"
+  draggable="true" ondragstart="drag(event)" id="F">
+  <img class="dragletter" src="resources/images/letterG.png"
+  draggable="true" ondragstart="drag(event)" id="G">
+  <img class="dragletter" src="resources/images/letterH.png"
+  draggable="true" ondragstart="drag(event)" id="H">
+  <img class="dragletter" src="resources/images/letterI.png"
+  draggable="true" ondragstart="drag(event)" id="I">
+  <img class="dragletter" src="resources/images/letterJ.png"
+  draggable="true" ondragstart="drag(event)" id="J">
+  <img class="dragletter" src="resources/images/letterK.png"
+  draggable="true" ondragstart="drag(event)" id="K">
+  <img class="dragletter" src="resources/images/letterL.png"
+  draggable="true" ondragstart="drag(event)" id="L">
+  <img class="dragletter" src="resources/images/letterM.png"
+  draggable="true" ondragstart="drag(event)" id="M">
+  <img class="dragletter" src="resources/images/letterN.png"
+  draggable="true" ondragstart="drag(event)" id="N">
+  <img class="dragletter" src="resources/images/letterO.png"
+  draggable="true" ondragstart="drag(event)" id="O">
+  <img class="dragletter" src="resources/images/letterP.png"
+  draggable="true" ondragstart="drag(event)" id="P">
+  <img class="dragletter" src="resources/images/letterQ.png"
+  draggable="true" ondragstart="drag(event)" id="Q">
+  <img class="dragletter" src="resources/images/letterR.png"
+  draggable="true" ondragstart="drag(event)" id="R">
+  <img class="dragletter" src="resources/images/letterS.png"
+  draggable="true" ondragstart="drag(event)" id="S">
+  <img class="dragletter" src="resources/images/letterT.png"
+  draggable="true" ondragstart="drag(event)" id="T">
+  <img class="dragletter" src="resources/images/letterU.png"
+  draggable="true" ondragstart="drag(event)" id="U">
+  <img class="dragletter" src="resources/images/letterV.png"
+  draggable="true" ondragstart="drag(event)" id="V">
+  <img class="dragletter" src="resources/images/letterW.png"
+  draggable="true" ondragstart="drag(event)" id="W">
+  <img class="dragletter" src="resources/images/letterX.png"
+  draggable="true" ondragstart="drag(event)" id="X">
+  <img class="dragletter" src="resources/images/letterY.png"
+  draggable="true" ondragstart="drag(event)" id="Y">
+  <img class="dragletter" src="resources/images/letterZ.png"
+  draggable="true" ondragstart="drag(event)" id="Z">
+
+</div>
+
+  </body>
+
+</html>
